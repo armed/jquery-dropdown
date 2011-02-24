@@ -1,0 +1,7 @@
+h1. jQuery Drop Down plugiin
+
+Very simple plugin, which replaces standard <select> tag with nice looking CSS drop down.
+
+Based on code snippets from this article:
+
+http://www.jankoatwarpspeed.com/post/2009/07/28/reinventing-drop-down-with-css-jquery.aspx

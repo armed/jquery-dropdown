@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>DropDown plugin sample</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <script src="lib/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="dropdown.js" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function() {
+        $('#sampleList').dropdown();
+      });
+    </script>
+  </head>
+  <body>
+      <div class="form">
+        <div class="title">Sample list</div>
+        <select id="sampleList">
+          <option value="1">one</option>
+          <option value="2">two</option>
+          <option value="3">three</option>
+        </select>
+      </div>
+  </body>
+</html>
