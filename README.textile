@@ -1,4 +1,4 @@
-h1. jQuery Drop Down plugiin
+h1. jQuery Drop Down plugin
 
 Very simple plugin, which replaces standard <select> tag with nice looking CSS drop down.
 
