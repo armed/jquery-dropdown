@@ -14,25 +14,25 @@ jQuery.fn.extend({
                     dropdown.append('<dd><ul></ul></dd>')
 
                     options.each(function() {
-                        $("#" + dropDownId + " dd ul").append(
+                        dropdown.find("dd ul").append(
                                 '<li><span class="text">' + $(this).text() + '<span class="value">'
                                 + $(this).val() + '</span></span></li>');
                     });
 
-            $("#" + dropDownId + ".dropdown dt span.text").click(function() {
-                $("#" + dropDownId + ".dropdown dd ul").toggle();
+            dropdown.find("dt span.text").click(function() {
+                dropdown.find("dd ul").toggle();
             });
 
             $(document).bind('click', function(e) {
                 var $clicked = $(e.target);
                 if (!$clicked.parents().hasClass("dropdown"))
-                    $("#" + dropDownId + ".dropdown dd ul").hide();
+                    dropdown.find("dd ul").hide();
             });
 
-            $("#" + dropDownId + ".dropdown dd ul li span.text").click(function() {
+            dropdown.find("dd ul li span.text").click(function() {
                 var text = $(this).html();
-                $("#" + dropDownId + ".dropdown dt span.text").html(text);
-                $("#" + dropDownId + ".dropdown dd ul").hide();
+                dropdown.find("dt span.text").html(text);
+                dropdown.find("dd ul").hide();
 
                 source.val($(this).find("span.value").html())
                 source.change();
