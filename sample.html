@@ -10,6 +10,9 @@
     <script type="text/javascript" charset="utf-8">
       $(document).ready(function() {
         $('#sampleList').dropdown();
+        $('#sampleList').change(function(evt) {
+            alert(evt.target.value);
+        });
       });
     </script>
   </head>

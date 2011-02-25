@@ -34,9 +34,6 @@ body {
     color: #555F98;
     border-bottom: 1px solid #ccc;
     padding: 10px;
-    background-image: url(/public/images/lock.png);
-    background-repeat: no-repeat;
-    background-position: 1px center;
 }
 
 .dropdown {
@@ -89,7 +86,7 @@ body {
     top: 2px;
     width: 250px;
     list-style: none;
-    height: 100px;
+    max-height: 200px;
     overflow: auto;
 }
 

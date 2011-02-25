@@ -35,6 +35,7 @@ jQuery.fn.extend({
                 $("#" + dropDownId + ".dropdown dd ul").hide();
 
                 source.val($(this).find("span.value").html())
+                source.change();
             });
 
             source.hide();
